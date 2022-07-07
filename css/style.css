@@ -705,9 +705,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 #qbootstrap-countdown .countdown span {
-  margin: 0 20px;
-  display: inline-block;
-  font-family: "Clicker Script", cursive;
+    margin: 0 20px;
+    display: inline-block;
+    font-family: "Jeju Myeongjo", cursive;
 }
 #qbootstrap-countdown .countdown small {
   display: block;
