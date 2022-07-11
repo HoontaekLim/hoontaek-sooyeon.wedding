@@ -75,8 +75,16 @@
 					<div class="container">
 						<div class="col-md-10 col-md-offset-1">
 							<div class="animate-box svg-sm colored">
-								<h2 style="font-size: 16px; text-align: left;">
+								<h2 id="invitation" style="font-size: 16px; text-align: left; display:none;">
 									결혼 초대장<br />
+									가장 아름다운 날, 여러분을 초대합니다.
+								</h2>
+								<h2 id="invitation1" style="font-size: 16px; text-align: left; display:none;">
+									우리아들 훈택이 결혼 초대장입니다.<br />
+									가장 아름다운 날, 여러분을 초대합니다.
+								</h2>
+								<h2 id="invitation2" style="font-size: 16px; text-align: left; display:none;">
+									우리딸 수연이 결혼 초대장입니다.<br />
 									가장 아름다운 날, 여러분을 초대합니다.
 								</h2>
 							</div>
@@ -333,10 +341,15 @@
 
 		if (p == 'h') {
 			document.getElementById("dvAccount1").style.display = '';
+            document.getElementById("invitation1").style.display = '';
 		}
 		else if (p == 's') {
 			document.getElementById("dvAccount2").style.display = '';
+            document.getElementById("invitation2").style.display = '';
 		}
+		else {
+            document.getElementById("invitation").style.display = '';
+        }
 	</script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
