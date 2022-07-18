@@ -1718,7 +1718,9 @@ h1, h2, h3, h4, h5, h6 {
 /* blink CSS 브라우저 별로 각각 애니메이션을 지정해 주어야 동작한다. */
 .blinkcss {
     font-weight: bold;
-    animation: blink 3s step-end infinite;
+    animation: blink 1.7s step-end infinite;
     -webkit-animation: blink 1s step-end infinite;
     border-radius:50%;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
 }
