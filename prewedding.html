@@ -176,42 +176,27 @@
 			</p>
 			<p style="text-align: left;margin-top: 20px; font-size: 16px;">
 				<span style="color: rgba(0,0,0,0.7)">장소</span><br />
-				인천광역시 연수구 테크노파크로 193<br />
-				전화: 032. 310. 5000<br />
-			</p>
-			<p style="text-align: left; font-size: 16px;">
-				<span style="color: rgba(0,0,0,0.7)">지하철</span><br />
-				인천 1호선 센트럴파크역 3번 출구 도보 5분
+				충청남도 보령시 보령북로 236-27<br />
+				전화: 041. 936. 1210<br />
 			</p>
 			<p style="text-align: left; font-size: 16px;">
 				<span style="color: rgba(0,0,0,0.7)">버스</span><br />
-				센트럴파크역 정류장 하차<br>
-				번호: M6405, M6450, 91, 98, 41
+				명문예식장역 정류장 하차<br>
+				번호: 210
 			</p>
 			<p style="text-align: left; font-size: 16px;">
 				<span style="color: rgba(0,0,0,0.7)">주차장</span><br />
-				네비게이션 : "송도센트럴파크호텔" 입력 <br>
+				네비게이션 : "명문웨딩홀부페" 입력 <br>
 				(혼잡할 수 있으니 대중교통 이용 바랍니다.) <br />
 			</p>
 		</div>
 		<!-- * 카카오맵 - 지도퍼가기 -->
 		<!-- 1. 지도 노드 -->
-		<div id="daumRoughmapContainer1659416170436" class="root_daum_roughmap root_daum_roughmap_landing"  style="width: 80%; height: auto; margin: auto;"></div>
-
-		<!--
-		2. 설치 스크립트
-		* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-	-->
-		<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+		<div id="daumRoughmapContainer1659416858598" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 80%; height: auto; margin: auto;"></div>
 
 		<!-- 3. 실행 스크립트 -->
 		<script charset="UTF-8">
-			new daum.roughmap.Lander({
-				"timestamp": "1659416170436",
-				"key": "2b8md",
-				//"mapWidth": "640",
-				//"mapHeight": "360"
-			}).render();
+			
 		</script>
 	</div>
 	<br />
@@ -366,47 +351,47 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
 				<td>1</td>
 				<td>2</td>
 				<td>3</td>
-			</tr>
-			<tr>
-				<td style="color:crimson">4</td>
+				<td>4</td>
 				<td>5</td>
 				<td>6</td>
-				<td>7</td>
+			</tr>
+			<tr>
+				<td style="color:crimson">7</td>
 				<td>8</td>
-				<td style="color:crimson">9</td>
-				<td style="color:crimson">10</td>
-			</tr>
-			<tr>
-				<td style="color:crimson">11</td>
-				<td style="color:crimson">12</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
 				<td>13</td>
-				<td>14</td>
-				<td>15</td>
-				<td>16</td>
-				<td class="blinkcss">17</td>
 			</tr>
 			<tr>
-				<td style="color:crimson">18</td>
+				<td style="color:crimson">14</td>
+				<td style="color:crimson">15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
 				<td>19</td>
 				<td>20</td>
-				<td>21</td>
+			</tr>
+			<tr>
+				<td style="color:crimson">21</td>
 				<td>22</td>
 				<td>23</td>
 				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+				<td class="blinkcss">27</td>
 			</tr>
 			<tr>
-				<td style="color:crimson">25</td>
-				<td>26</td>
-				<td>27</td>
-				<td>28</td>
+				<td style="color:crimson">28</td>
 				<td>29</td>
 				<td>30</td>
+				<td>31</td>
+				<td></td>
+				<td></td>
 				<td></td>
 			</tr>
 		</table>
@@ -420,11 +405,8 @@
 		document.getElementById("dvCalendar").style.height = dw + 'px';
 		document.getElementById("tbCalendar").style.height = tw + 'px';
 
-        var dw2 = document.getElementById("dvCalendar2").clientWidth;
-        var tw2 = document.getElementById("tbCalendar2").clientWidth;
-
-        document.getElementById("dvCalendar2").style.height = dw2 + 'px';
-        document.getElementById("tbCalendar2").style.height = tw2 + 'px';
+        document.getElementById("dvCalendar2").style.height = dw + 'px';
+        document.getElementById("tbCalendar2").style.height = tw + 'px';
 	</script>
 
 	<div id="qbootstrap-countdown" style="padding: 7em 1;background-image: url(images/photo/bottom.jpg); background-position: center" data-section="wedding-day">
@@ -495,7 +477,16 @@
 				document.getElementById("p2").style.display = '';
 				document.getElementById("p2_1").style.display = '';
 				document.getElementById("p2_2").style.display = ''; 
-                document.getElementById("dvCalendar2").style.display = '';
+				document.getElementById("dvCalendar2").style.display = '';
+
+				if (document.getElementById("daumRoughmapContainer1659416858598").innerHTML == '') {
+					new daum.roughmap.Lander({
+						"timestamp": "1659416858598",
+						"key": "2b8mn",
+						//"mapWidth": "640",
+						//"mapHeight": "360"
+					}).render();
+				}
 
 
 				document.getElementById("p1").style.display = 'none';
