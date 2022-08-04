@@ -161,7 +161,7 @@
 
 		<!-- 3. 실행 스크립트 -->
 		<script charset="UTF-8">
-			
+
 		</script>
 	</div>
 	<div id="p2_2" class="row animate-box">
@@ -190,12 +190,12 @@
 
 		<!-- 3. 실행 스크립트 -->
 		<script charset="UTF-8">
-            new daum.roughmap.Lander({
-                "timestamp": "1659418642876",
-                "key": "2b8nj",
-                //"mapWidth": "640",
-                //"mapHeight": "360"
-            }).render();
+			new daum.roughmap.Lander({
+				"timestamp": "1659418642876",
+				"key": "2b8nj",
+				//"mapWidth": "640",
+				//"mapHeight": "360"
+			}).render();
 		</script>
 	</div>
 	<br />
@@ -206,7 +206,9 @@
 			</p>
 			<p style="text-align: left;margin-top: 20px; font-size: 16px; color: rgba(0,0,0,0.7)">
 				김영호 : 3401-10-002858-9(새마을금고)<br />
-				유미영 : 3401-10-001007-2(새마을금고)
+				<font style="margin-left:2px;color:tomato">☎️</font> 010. 2276. 5672<br />
+				유미영 : 3401-10-001007-2(새마을금고)<br />
+				<font style="margin-left:2px;color:tomato">☎️</font> 010. 5912. 5672
 			</p>
 		</div>
 	</div>
@@ -404,8 +406,8 @@
 		document.getElementById("dvCalendar").style.height = dw + 'px';
 		document.getElementById("tbCalendar").style.height = tw + 'px';
 
-        document.getElementById("dvCalendar2").style.height = dw + 'px';
-        document.getElementById("tbCalendar2").style.height = tw + 'px';
+		document.getElementById("dvCalendar2").style.height = dw + 'px';
+		document.getElementById("tbCalendar2").style.height = tw + 'px';
 	</script>
 
 	<div id="qbootstrap-countdown" style="padding: 7em 1;background-image: url(images/photo/bottom.jpg); background-position: center" data-section="wedding-day">
@@ -475,33 +477,33 @@
 			if (gubun == "p1") {
 				document.getElementById("p2").style.display = '';
 				document.getElementById("p2_1").style.display = '';
-				document.getElementById("p2_2").style.display = ''; 
+				document.getElementById("p2_2").style.display = '';
 				document.getElementById("dvCalendar2").style.display = '';
 
 				document.getElementById("p1").style.display = 'none';
 				document.getElementById("p1_1").style.display = 'none';
 				document.getElementById("p1_2").style.display = 'none';
-                document.getElementById("dvCalendar").style.display = 'none';
+				document.getElementById("dvCalendar").style.display = 'none';
 			}
 			else {
 				document.getElementById("p1").style.display = '';
 				document.getElementById("p1_1").style.display = '';
 				document.getElementById("p1_2").style.display = '';
-                document.getElementById("dvCalendar").style.display = '';
+				document.getElementById("dvCalendar").style.display = '';
 
-                if (document.getElementById("daumRoughmapContainer1657670794686").innerHTML == '') {
-                    new daum.roughmap.Lander({
-                        "timestamp": "1657670794686",
-                        "key": "2axq3",
-                        //"style": "width: 87%; height: auto; margin-left: 30px;"
-                        //"style": "width: 80%; height: auto; margin: auto;"
-                    }).render();
+				if (document.getElementById("daumRoughmapContainer1657670794686").innerHTML == '') {
+					new daum.roughmap.Lander({
+						"timestamp": "1657670794686",
+						"key": "2axq3",
+						//"style": "width: 87%; height: auto; margin-left: 30px;"
+						//"style": "width: 80%; height: auto; margin: auto;"
+					}).render();
 				}
 
 				document.getElementById("p2").style.display = 'none';
 				document.getElementById("p2_1").style.display = 'none';
 				document.getElementById("p2_2").style.display = 'none';
-                document.getElementById("dvCalendar2").style.display = 'none';
+				document.getElementById("dvCalendar2").style.display = 'none';
 			}
 		}
 	</script>
