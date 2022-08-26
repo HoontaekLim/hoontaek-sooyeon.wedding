@@ -101,6 +101,12 @@
 									예쁜 빛이 두 사람에게 내려앉는 가을날<br />
 									설레는 첫 걸음을 함께 빛내주세요.
 								</h2>
+								<h2 id="invitation5" style="font-size: 18px; text-align: left; display:none;">
+									선학 가족여러분 안녕하세요?<br />
+									저의 결혼식 초대장입니다.<br />
+									죄송한 마음에 초대는 못드렸지만<br />
+									많은 응원과 격려 부탁드립니다.
+								</h2>
 							</div>
 						</div>
 					</div>
@@ -355,7 +361,7 @@
         document.getElementById("tbCalendar").style.height = tw+'px';
 	</script>
 
-	<div id="qbootstrap-countdown" style="padding: 7em 1; background-image: url(images/photo/bottom.jpg); background-position: center; background-position-y: -180px;" data-section="wedding-day">
+	<div id="qbootstrap-countdown" style="padding: 7em 1; background-image: url(images/photo/bottom.jpg); background-position: center; background-position-y: -140px;" data-section="wedding-day">
 		<div class="overlay"></div>
 		<div class="display-over">
 			<div class="container">
@@ -424,6 +430,9 @@
 		}
         else if (p == 'y') {
             document.getElementById("invitation4").style.display = '';
+		}
+        else if (p == 'sh') {
+            document.getElementById("invitation5").style.display = '';
         }
 		else {
 			document.getElementById("invitation").style.display = '';
