@@ -79,33 +79,9 @@
 									결혼식 초대장<br />
 									가장 아름다운 날, 여러분을 초대합니다.
 								</h2>
-								<h2 id="invitation1" style="font-size: 18px; text-align: left; display:none;">
-									우리 아들 훈택이 결혼식 초대장입니다.<br />
-									가장 아름다운 날, 여러분을 초대합니다.
-								</h2>
 								<h2 id="invitation2" style="font-size: 18px; text-align: left; display:none;">
 									우리 딸 수연이 결혼식 초대장입니다.<br />
 									가장 아름다운 날, 여러분을 초대합니다.
-								</h2>
-								<h2 id="invitation3" style="font-size: 18px; text-align: left; display:none;">
-									안녕하세요? 임훈택입니다. <br />
-									저의 결혼식 초대장입니다.<br />
-									바쁘시겠지만, 참석하셔서<br />
-									저의 새로운 출발을<br />
-									많은 응원과 격려 부탁드립니다.<br />
-									고맙습니다.
-								</h2>
-								<h2 id="invitation4" style="font-size: 18px; text-align: left; display:none;">
-									안녕하세요? 김수연입니다.<br />
-									저의 결혼식 초대장입니다.<br />
-									예쁜 빛이 두 사람에게 내려앉는 가을날<br />
-									설레는 첫 걸음을 함께 빛내주세요.
-								</h2>
-								<h2 id="invitation5" style="font-size: 18px; text-align: left; display:none;">
-									선학 가족여러분 안녕하세요?<br />
-									저의 결혼식 초대장입니다.<br />
-									죄송한 마음에 초대는 못드렸지만<br />
-									많은 응원과 격려 부탁드립니다.
 								</h2>
 							</div>
 						</div>
@@ -122,9 +98,15 @@
 				<small>임종열, 구민영 장남&nbsp;&nbsp;&nbsp;&nbsp;김영호, 유미영 장녀</small><br />
 				<small style="color:cornflowerblue;">신랑</small> 임훈택 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small style="color:hotpink;">신부</small> 김수연
 			</p><br />
-			<p style="font-size: 18px; margin-bottom: 0px; color: rgba(0, 0, 0, 0.7)">
+			<p id="p1" style="font-size: 20px; color: indianred; font-weight: bold; margin-top: -10px; margin-bottom: 4px; display: none;" onclick="ChangeEvent('p1')">👉 피로연 정보보기(클릭)</p>
+			<p id="p2" style="font-size: 20px; color: indianred; font-weight: bold; margin-top: -10px; margin-bottom: 4px;" onclick="ChangeEvent('p2')">👉 결혼식 정보보기(클릭)</p>
+			<p id="p1_1" style="font-size: 18px; margin-bottom: 0px; color: rgba(0, 0, 0, 0.7); display: none;">
 				2022년 9월 17일 토요일 오후 12시30분<br />
-				<font style="color:forestgreen;">송도센트럴파크호텔</font> 4층 Lily Hall<br />
+				<font style="color:forestgreen;">인천 송도센트럴파크호텔</font> 4층 Lily Hall<br />
+			</p>
+			<p id="p2_1" style="font-size: 18px; margin-bottom: 0px; color: rgba(0, 0, 0, 0.7);">
+				2022년 8월 27일 토요일 오후 12시<br />
+				<font style="color:forestgreen;">피로연 : 명문예식장</font><br />
 			</p>
 		</div>
 	</div>
@@ -142,8 +124,7 @@
 
 	<br />
 	<div class="row animate-box" style="height: auto; width: 100%; margin: auto; border:0.7px solid rgba(82, 81, 81, 0.1);"></div>
-
-	<div class="row animate-box">
+	<div id="p1_2" style="display:none;" class="row animate-box">
 		<div style="height: auto; width: 80%; margin: auto;">
 			<p style="font-size: 18px; margin-bottom: 20px; color: rgba(0, 0, 0, 0.8)">
 				<br />| 오시는 길
@@ -180,28 +161,44 @@
 
 		<!-- 3. 실행 스크립트 -->
 		<script charset="UTF-8">
+
+		</script>
+	</div>
+	<div id="p2_2" class="row animate-box">
+		<div style="height: auto; width: 80%; margin: auto;">
+			<p style="font-size: 18px; margin-bottom: 20px; color: rgba(0, 0, 0, 0.8)">
+				<br />| 오시는 길
+			</p>
+			<p style="text-align: left;margin-top: 20px; font-size: 16px;">
+				<span style="color: rgba(0,0,0,0.7)">장소</span><br />
+				충청남도 보령시 보령북로 236-27<br />
+				전화: 041. 936. 1210<br />
+			</p>
+			<p style="text-align: left; font-size: 16px;">
+				<span style="color: rgba(0,0,0,0.7)">버스</span><br />
+				명문예식장역 정류장 하차<br>
+				번호: 210
+			</p>
+			<p style="text-align: left; font-size: 16px;">
+				<span style="color: rgba(0,0,0,0.7)">주차장</span><br />
+				네비게이션 : "명문예식장" 입력 <br>
+			</p>
+		</div>
+		<!-- * 카카오맵 - 지도퍼가기 -->
+		<!-- 1. 지도 노드 -->
+		<div id="daumRoughmapContainer1659418642876" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 80%; height: auto; margin: auto;"></div>
+
+		<!-- 3. 실행 스크립트 -->
+		<script charset="UTF-8">
 			new daum.roughmap.Lander({
-				"timestamp": "1657670794686",
-				"key": "2axq3",
-				//"style": "width: 87%; height: auto; margin-left: 30px;"
-				//"style": "width: 80%; height: auto; margin: auto;"
+				"timestamp": "1659418642876",
+				"key": "2b8nj",
+				//"mapWidth": "640",
+				//"mapHeight": "360"
 			}).render();
 		</script>
 	</div>
 	<br />
-	<div id="dvAccount1" class="row animate-box" style="display:none;">
-		<div style="height: auto; width: 80%; margin: auto;">
-			<p style="font-size: 18px; margin-bottom: 20px; color: rgba(0, 0, 0, 0.8)">
-				| 마음전하기
-			</p>
-			<p style="text-align: left;margin-top: 20px; font-size: 16px; color: rgba(0,0,0,0.7)">
-				임종열 : 208401-04-164615(국민은행)<br />
-				<font style="margin-left:2px;color:tomato">☎️</font> 010. 6235. 3530<br />
-				구민영 : 655225-89-118484(국민은행)<br />
-				<font style="margin-left:2px;color:tomato">☎️</font> 010. 8871. 5536
-			</p>
-		</div>
-	</div>
 	<div id="dvAccount2" class="row animate-box" style="display:none;">
 		<div style="height: auto; width: 80%; margin: auto;">
 			<p style="font-size: 18px; margin-bottom: 20px; color: rgba(0, 0, 0, 0.8)">
@@ -290,7 +287,7 @@
 		</p>
 	</div>
 	<br />
-	<div id="dvCalendar" class="row animate-box" style="width: 100%; margin: auto; padding-top: 13px; padding-bottom: 13px; background-color: lightgrey; font-family: 'Jeju Myeongjo', serif;">
+	<div id="dvCalendar" class="row animate-box" style="display: none; width: 100%; margin: auto; padding-top: 13px; padding-bottom: 13px; background-color: lightgrey; font-family: 'Jeju Myeongjo', serif;">
 		<table id="tbCalendar" style="width: 93%; margin: auto; text-align:center; background-color:white; border:0.7px solid rgba(82, 81, 81, 0.1);">
 			<tr>
 				<td colspan="7" style="font-size:23px;">2022년 9월 17일    <font style="font-size:19px;">12시 30분</font></td>
@@ -351,17 +348,81 @@
 			</tr>
 		</table>
 	</div>
+	<div id="dvCalendar2" class="row animate-box" style="width: 100%; margin: auto; padding-top: 13px; padding-bottom: 13px; background-color: lightgrey; font-family: 'Jeju Myeongjo', serif;">
+		<table id="tbCalendar2" style="width: 93%; margin: auto; text-align:center; background-color:white; border:0.7px solid rgba(82, 81, 81, 0.1);">
+			<tr>
+				<td colspan="7" style="font-size:23px;">2022년 8월 27일    <font style="font-size:19px;">12시</font></td>
+			</tr>
+			<tr>
+				<td style="width:14.28%">일</td>
+				<td style="width:14.28%">월</td>
+				<td style="width:14.28%">화</td>
+				<td style="width:14.28%">수</td>
+				<td style="width:14.28%">목</td>
+				<td style="width:14.28%">금</td>
+				<td style="width:14.28%">토</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td style="color:crimson">7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+			</tr>
+			<tr>
+				<td style="color:crimson">14</td>
+				<td style="color:crimson">15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<td style="color:crimson">21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+				<td class="blinkcss">27</td>
+			</tr>
+			<tr>
+				<td style="color:crimson">28</td>
+				<td>29</td>
+				<td>30</td>
+				<td>31</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
 	<br />
 
 	<script>
-		var dw = document.getElementById("dvCalendar").clientWidth;
-		var tw = document.getElementById("tbCalendar").clientWidth;
+		var dw = document.getElementById("dvCalendar2").clientWidth;
+		var tw = document.getElementById("tbCalendar2").clientWidth;
 
 		document.getElementById("dvCalendar").style.height = dw + 'px';
 		document.getElementById("tbCalendar").style.height = tw + 'px';
+
+		document.getElementById("dvCalendar2").style.height = dw + 'px';
+		document.getElementById("tbCalendar2").style.height = tw + 'px';
 	</script>
 
-	<div id="qbootstrap-countdown" style="padding: 7em 1; background-image: url(images/photo/bottom.jpg); background-position: center; background-position-y: -140px;" data-section="wedding-day">
+	<div id="qbootstrap-countdown" style="padding: 7em 1;background-image: url(images/photo/bottom.jpg); background-position: center;background-position-y:-160px;" data-section="wedding-day">
 		<div class="overlay"></div>
 		<div class="display-over">
 			<div class="container">
@@ -416,25 +477,46 @@
 		}
 		var p = getParameter("p");
 
-		if (p == 'h') {
-			document.getElementById("dvAccount1").style.display = '';
-			document.getElementById("invitation1").style.display = '';
-		}
-		else if (p == 's') {
+		if (p == 's') {
 			document.getElementById("dvAccount2").style.display = '';
 			document.getElementById("invitation2").style.display = '';
 		}
-		else if (p == 'm') {
-			document.getElementById("invitation3").style.display = '';
-		}
-		else if (p == 'y') {
-			document.getElementById("invitation4").style.display = '';
-		}
-		else if (p == 'sh') {
-			document.getElementById("invitation5").style.display = '';
-		}
 		else {
 			document.getElementById("invitation").style.display = '';
+		}
+
+		function ChangeEvent(gubun) {
+			if (gubun == "p1") {
+				document.getElementById("p2").style.display = '';
+				document.getElementById("p2_1").style.display = '';
+				document.getElementById("p2_2").style.display = '';
+				document.getElementById("dvCalendar2").style.display = '';
+
+				document.getElementById("p1").style.display = 'none';
+				document.getElementById("p1_1").style.display = 'none';
+				document.getElementById("p1_2").style.display = 'none';
+				document.getElementById("dvCalendar").style.display = 'none';
+			}
+			else {
+				document.getElementById("p1").style.display = '';
+				document.getElementById("p1_1").style.display = '';
+				document.getElementById("p1_2").style.display = '';
+				document.getElementById("dvCalendar").style.display = '';
+
+				if (document.getElementById("daumRoughmapContainer1657670794686").innerHTML == '') {
+					new daum.roughmap.Lander({
+						"timestamp": "1657670794686",
+						"key": "2axq3",
+						//"style": "width: 87%; height: auto; margin-left: 30px;"
+						//"style": "width: 80%; height: auto; margin: auto;"
+					}).render();
+				}
+
+				document.getElementById("p2").style.display = 'none';
+				document.getElementById("p2_1").style.display = 'none';
+				document.getElementById("p2_2").style.display = 'none';
+				document.getElementById("dvCalendar2").style.display = 'none';
+			}
 		}
 	</script>
 	<!-- jQuery -->
